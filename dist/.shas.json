@@ -1,0 +1,65 @@
+[
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "index.html",
+        "sha": "5b88a23051d47a0e78d46d1f9bae3acec49b0776"
+      }
+    ],
+    "outputSha": "20a12811693fe243046a5616ae08f179d1f4fee1",
+    "input": "index.html",
+    "output": [
+      "index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.25.0::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "0e2e4898796efcb3f91a42dba7bec9af5851475e"
+      }
+    ],
+    "outputSha": "4298f317f4c7cfe0fdd8ceb4bd8c606b3119f74f",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
+    ]
+  },
+  {
+    "type": "stylus@0.54.5::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/main.styl",
+        "sha": "7fcbd3a1d323403cfcee50f1e995785c26f46231"
+      },
+      {
+        "file": "styles/main.styl",
+        "sha": "7fcbd3a1d323403cfcee50f1e995785c26f46231"
+      }
+    ],
+    "outputSha": "56fe7747cc38bfc533021632e41971c8aebd1b48",
+    "input": "styles/main.styl",
+    "output": [
+      "styles/main.css.map",
+      "styles/main.css"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "styles/normalize.css",
+        "sha": "ebe0759bf259b6caeadee6137973481046ac5636"
+      }
+    ],
+    "outputSha": "d94fcfe323f00ee05a9ce333057a72542efac3ff",
+    "input": "styles/normalize.css",
+    "output": [
+      "styles/normalize.css.map",
+      "styles/normalize.css"
+    ]
+  }
+]

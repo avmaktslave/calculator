@@ -1,0 +1,53 @@
+@import 'normalize.css'
+linear = rgb(225, 221, 228)
+linear2 = rgb(125, 143, 163)
+linear3 = rgb(132, 230, 160)
+shad = rgba(127, 158, 135, 0.72)
+text = rgb(34, 42, 34)
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Anonymous+Pro|Share+Tech+Mono');
+body
+    background-image url(../images/hip-square.png)
+
+h1
+    text-align center
+    font-size 3.5rem
+    font-family 'Shadow Into Light', cursive
+
+.calculator
+    display flex
+    flex-flow row wrap
+    max-width 400px
+    min-height 300px
+    margin 10px auto
+    border 20px solid linear
+    border-radius 10px
+    background linear
+    box-shadow 0 1px 6px 6px shad
+    input
+        width 100%
+        height 40px
+        background linear-gradient(120deg, linear2, linear)
+        font-family 'Share Tech Mono', monospace
+        font-size 41px
+        text-align right
+        padding 0 0 0 5px
+    button
+        width 50%
+        height 40px
+        background linear-gradient(45deg, linear3, linear2)
+        box-shadow 1px 1px 7px shad
+        border-radius 10px
+        font-family 'Anonymous Pro', monospace
+        font-size 20px
+    button:hover
+        background linear-gradient(135deg, linear3, linear2)
+    button:active
+        background linear-gradient(135deg, linear2, linear3)
+    .numbers
+        display flex
+        flex-flow row wrap
+        justify-content space-around
+        button
+            width 25%
+            height 64px
+            font-size 35px
