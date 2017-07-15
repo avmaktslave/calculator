@@ -1,0 +1,20 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pingy/cli": "^0.6.13",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.0",
+    "stylus": "^0.54.5"
+  }
+}
