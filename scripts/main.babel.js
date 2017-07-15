@@ -7,26 +7,23 @@ let memoryCurrentNumber = 0,
     memoryNewNumber = false,
     memoryPendingOperation = '';
 
-for (let i = 0; i < numbers.length; i++) {
-    let num = numbers[i];
-    num.addEventListener('click', function (e) {
+numbers.forEach((item) => {
+    item.addEventListener('click', function (e) {
         pressNum(e.target.textContent);
     });
-}
+});
 
-for (let i = 0; i < operations.length; i++) {
-    let oprs = operations[i];
-    oprs.addEventListener('click', function (e) {
+operations.forEach((item) => {
+    item.addEventListener('click', function (e) {
         operation(e.target.textContent);
     });
-}
+});
 
-for (let i = 0; i < clearBtns.length; i++) {
-    let cl = clearBtns[i];
-    cl.addEventListener('click', function (e) {
+clearBtns.forEach((item) => {
+    item.addEventListener('click', function (e) {
         clear(e.srcElement.id);
     });
-}
+});
 
 decimalBtn.addEventListener('click', function (e) {
     decimal(e.target.textContent);
