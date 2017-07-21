@@ -7,27 +7,19 @@ let memoryCurrentNumber = 0,
     memoryNewNumber = false,
     memoryPendingOperation = '';
 
-numbers.forEach((item) => {
-    item.addEventListener('click', function (e) {
-        pressNum(e.target.textContent);
-    });
+numbers.forEach(item => {
+    item.addEventListener('click', e => pressNum(e.target.textContent));
 });
 
-operations.forEach((item) => {
-    item.addEventListener('click', function (e) {
-        operation(e.target.textContent);
-    });
+operations.forEach(item => {
+    item.addEventListener('click', e => operation(e.target.textContent));
 });
 
-clearBtns.forEach((item) => {
-    item.addEventListener('click', function (e) {
-        clear(e.srcElement.id);
-    });
+clearBtns.forEach(item => {
+    item.addEventListener('click', e => clear(e.srcElement.id));
 });
 
-decimalBtn.addEventListener('click', function (e) {
-    decimal(e.target.textContent);
-});
+decimalBtn.addEventListener('click', e => decimal(e.target.textContent));
 
 function pressNum(number) {
     if (memoryNewNumber) {
