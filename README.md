@@ -1,2 +1,2 @@
 # calculator
-To start the calculator, run the index.html in the folder dist
+To start the calculator, run index.html in folder dist
